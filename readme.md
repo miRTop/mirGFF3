@@ -2,7 +2,7 @@ A proxy for miRNA/isomiR(need REF) data analysis where all tools meet with the i
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Description](https://img.shields.io/badge/gff3-definition-yellow.svg)](https://github.com/miRTop/mirGFF3/blob/master/definition.md)
-[![Example](https://img.shields.io/badge/gff3-example-green.svg)](https://github.com/miRTop/mirGFF3/blob/master/example.md)
+[![Example](https://img.shields.io/badge/gff3-example-green.svg)](https://github.com/miRTop/mirGFF3/blob/master/example.gff)
 
 **Introduction**
 
