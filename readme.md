@@ -1,8 +1,12 @@
-A proxy for miRNA/isomiR(need REF) data analysis where all tools meet with the idea to create an ecosystem of data analysis promoting community collaboration.
+A proxy for [miRNA](https://en.wikipedia.org/wiki/MicroRNA)/[isomiR](https://en.wikipedia.org/wiki/IsomiR) data analysis where all tools meet with the idea to create an ecosystem of data analysis promoting community collaboration.
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Description](https://img.shields.io/badge/gff3-definition-yellow.svg)](https://github.com/miRTop/mirGFF3/blob/master/definition.md)
 [![Example](https://img.shields.io/badge/gff3-example-green.svg)](https://github.com/miRTop/mirGFF3/blob/master/example.gff)
+[![Example](https://img.shields.io/badge/FAIRsharing-accepted-blue.svg)](https://fairsharing.org/bsg-s001218)
+[![Example](https://img.shields.io/badge/EDMA-waiting-yellow.svg)](https://github.com/edamontology/edamontology/issues/364)
+
+
 
 **Introduction**
 
@@ -21,7 +25,7 @@ Note: Keep in mind this is for the output of a pipeline, so we know there will b
 > If you want to fo fast, go alone;
 > If you want to go far, go together
 
-*by Tracy Teal (Data Carpenter CEO, GCC BOSC 2018)* # TODO need reference
+*by Tracy Teal (Data Carpenter CEO, GCC BOSC 2018)* [see slides](https://gccbosc2018.sched.com/event/EQF7/opening-keynote-tracy-k-teal)
 
 **Version**
 
@@ -57,11 +61,16 @@ Link to the API: https://mirtop.readthedocs.io/en/latest/
 **Implementation**
 
 * Submitted to EDAM Ontology
-* Submitted to FAREsharing.org
+* FAIRsharing: https://fairsharing.org/bsg-s001218
 
 
 **Presentations**
 
-* GCCBOST2018 # TODO missing link
+* [GCCBOSC2018](https://f1000research.com/slides/7-953)<sup>1</sup>
 
 *Note: if you presented this work, please chime in this issue* # TODO missing link
+
+
+**Reference**
+
+1: Desvignes T, EIlbeck K, S. Vlachos I et al. miRTOP: An open source community project for the development of a unified format file for miRNA data [version 1; not peer reviewed]. F1000Research 2018, 7(ISCB Comm J):953 (slides) (doi: 10.7490/f1000research.1115724.1)

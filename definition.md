@@ -4,8 +4,19 @@ VERSION: 1.0
 
 **Description**
 
+Lines beginning with '##' are directives (sometimes called pragmas or meta-data) and provide meta-information about the document as a whole. Blank lines should be ignored by parsers and lines beginning with a single '#' are used for human-readable comments and can be ignored by parsers
+
+In addition, the following characters have reserved meanings in column 9 and must be escaped when used in other contexts:
+
+; semicolon (%3B)
+= equals (%3D)
+& ampersand (%26)
+, comma (%2C)
+
+
 Please add description for each columns/attribute (R:required, O:optional)
 
+## Header
 * header:
   * (R) small RNA GFF version `## VERSION: 1.0`
   * (R) database: `##source-ontology` using FAIRSharing.org:
@@ -15,6 +26,9 @@ Please add description for each columns/attribute (R:required, O:optional)
   *  (O) genome/database version used (maybe try to get from BAM file if GFF3 generated from it): `## REFERENCE:`
   * (R) sample names used in attribute:Expression: `## COLDATA:` separated by spaces
   * (O) Filter tags meaning: See Filter attribute below. Different filter tags should be separated by `,` character. Example: `## FILTER: ` and example would be `## FILTER: PASS(is ok), REJECT(false positive), REJECT lowcount(rejected due to low count in data)`.
+
+## Columns
+
 * (R) column1: seqID: precursor name
 * (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
 * (R) column3: type: `ref_miRNA, isomiR`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA and SO:0002167 isomiR)
