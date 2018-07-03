@@ -10,7 +10,7 @@ A proxy for [miRNA](https://en.wikipedia.org/wiki/MicroRNA)/[isomiR](https://en.
 
 **Introduction**
 
-As discussed here: https://github.com/miRTop/incubator/issues/10 we've defined a GFF3 format for output of small RNA pipelines focused on miRNA data currently.
+As discussed here: https://github.com/miRTop/incubator/issues/10 we've defined a GFF3 format for output of small RNA pipelines focused on miRNA data currently. We is an open community project ([read more](http://mirtop.github.io)) and joint us!
 
 This output is based on the current GFF3 definition: https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md
 

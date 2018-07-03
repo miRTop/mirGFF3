@@ -1,4 +1,4 @@
-## GFF3 adapted for miRNA sequencing data. VERSION 1.0
+## GFF3 adapted for miRNA sequencing data. VERSION 0.9
 ## source-ontology: miRBase v21 doi:10.25504/fairsharing.hmgte8
 ## COLDATA: reads
 hsa-let-7a-1	miRBasev21	isomiR	4	26	0	+	.	Read=hsa-let-7a-1_hsa-let-7a-5p_5:27_-1:0_mut:null_add:null_x103; UID=bhJJ5WJQ1; Name=hsa-let-7a-5p; Parent=hsa-let-7a-1; Variant=iso_5p:+1; Cigar=23M; Expression=103; Filter=Pass; Hits=1
