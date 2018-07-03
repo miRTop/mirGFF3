@@ -29,7 +29,7 @@ Note: Keep in mind this is for the output of a pipeline, so we know there will b
 
 **Version**
 
-VERSION: 1.0
+VERSION: 0.9
 
 **Contact**
 
