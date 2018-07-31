@@ -1,6 +1,6 @@
 **Version**
 
-VERSION: 0.9 (1.0 release on 07/13/2018)
+VERSION: 1.0
 
 **Description**
 
