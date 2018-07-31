@@ -4,7 +4,7 @@ A proxy for [miRNA](https://en.wikipedia.org/wiki/MicroRNA)/[isomiR](https://en.
 [![Description](https://img.shields.io/badge/gff3-definition-yellow.svg)](https://github.com/miRTop/mirGFF3/blob/master/definition.md)
 [![Example](https://img.shields.io/badge/gff3-example-green.svg)](https://github.com/miRTop/mirGFF3/blob/master/example.gff)
 [![Example](https://img.shields.io/badge/FAIRsharing-accepted-blue.svg)](https://fairsharing.org/bsg-s001218)
-[![Example](https://img.shields.io/badge/EDMA-waiting-yellow.svg)](https://github.com/edamontology/edamontology/issues/364)
+[![Example](https://img.shields.io/badge/EDMA-accepted-blue.svg)](http://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=format_3864)
 
 
 
