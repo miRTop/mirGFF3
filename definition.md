@@ -38,7 +38,7 @@ Please add description for each columns/attribute (R:required, O:optional)
 * (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant righ now. This can be: `.`
 * (R) column9: attributes:
   * (R) UID: unique ID based on sequence like mintmap has for tRNA: prefix-22-BZBZOS4Y1 (https://github.com/TJU-CMC-Org/MINTmap/tree/master/MINTplates). good way to use it as cross-mapper ID between different naming or future changes. Currently supported by [mirtop](https://github.com/miRTop/mirtop/blob/dev/mirtop/mirna/realign.py#) code.
-  * Read: read name
+  * (O) Read: read name
   * (R) Name: mature name
   * (R) Parent: hairpin precursor name
   * (R) Variant: (categorical types - adapted from isomiR-SEA)
