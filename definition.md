@@ -31,14 +31,14 @@ Please add description for each columns/attribute (R:required, O:optional)
 
 * (R) column1: seqID: precursor name
 * (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
-* (R) column3: type: `ref_miRNA, isomiR`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA and SO:0002167 isomiR)
+* (R) column3: type: `ref_miRNA, isomiR, pre_miRNA`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA or SO:0002167 isomiR or SO:0001244 pre_miRNA)
 * (R) column4/5: start/end: precursor start/end as indicated by alignment tool
 * (O) column6: score (Optional): It can be the mapping score or any other score the tool wants to assign to the sequence.
 * (R) column7: strand. In the case of mapping against precursor should be always `+`. It should accept mapping against the genome: `+/-` allowed.
 * (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant righ now. This can be: `.`
 * (R) column9: attributes:
   * (R) UID: unique ID based on sequence like mintmap has for tRNA: prefix-22-BZBZOS4Y1 (https://github.com/TJU-CMC-Org/MINTmap/tree/master/MINTplates). good way to use it as cross-mapper ID between different naming or future changes. Currently supported by [mirtop](https://github.com/miRTop/mirtop/blob/dev/mirtop/mirna/realign.py#) code.
-  * (O) Read: read name
+  * (O) Read: read sequence
   * (R) Name: mature name
   * (R) Parent: hairpin precursor name
   * (R) Variant: (categorical types - adapted from isomiR-SEA)
