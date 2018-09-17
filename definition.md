@@ -30,7 +30,7 @@ Please add description for each columns/attribute (R:required, O:optional)
 ## Columns
 
 * (R) column1: seqID: precursor name
-* (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
+* (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, miRCarta, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
 * (R) column3: type: `ref_miRNA, isomiR, pre_miRNA`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA or SO:0002167 isomiR or SO:0001244 pre_miRNA)
 * (R) column4/5: start/end: precursor start/end as indicated by alignment tool
 * (O) column6: score (Optional): It can be the mapping score or any other score the tool wants to assign to the sequence.
@@ -53,7 +53,7 @@ Please add description for each columns/attribute (R:required, O:optional)
   * (O) Changes (optional): similar to previous one but indicating the nucleotides being changed.
     * additions are in capital case
     * deletions are in lower case
-    * example: `Changes iso_5p:0,iso_3p:TT,iso_add:GTC,iso_snp:0` where `Variant iso_add:+3,iso_3p:-2`.
+    * example: `Changes iso_5p:0,iso_3p:TT,iso_add:GTC` where `Variant iso_add:+3,iso_3p:-2`.
   * (R) Cigar: CIGAR string as indicated [here](https://samtools.github.io/hts-specs/SAMv1.pdf). It is the standard CIGAR for aligners. With the restriction that `M` means exact match always. That's a difference with some aligners where `M` includes mismatches. In this case, if there is a mismatch, then it should be output like: `11MA7M` to indicates there is a mismatch at position 12, where `A` is the reference nucleotide.
   * (R) Hits: number of hits in the database.
   * (O) Alias (Optional): get names from miRBase/miRgeneDB or other database separated by `,`
