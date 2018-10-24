@@ -1,6 +1,6 @@
 **Version**
 
-VERSION: 1.0
+VERSION: 1.1
 
 **Description**
 
@@ -35,9 +35,9 @@ Please add description for each columns/attribute (R:required, O:optional)
 * (R) column4/5: start/end: precursor start/end as indicated by alignment tool
 * (O) column6: score (Optional): It can be the mapping score or any other score the tool wants to assign to the sequence.
 * (R) column7: strand. In the case of mapping against precursor should be always `+`. It should accept mapping against the genome: `+/-` allowed.
-* (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant righ now. This can be: `.`
+* (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant right now. This can be: `.`
 * (R) column9: attributes:
-  * (R) UID: unique ID based on sequence like mintmap has for tRNA: prefix-22-BZBZOS4Y1 (https://github.com/TJU-CMC-Org/MINTmap/tree/master/MINTplates). good way to use it as cross-mapper ID between different naming or future changes. Currently supported by [mirtop](https://github.com/miRTop/mirtop/blob/dev/mirtop/mirna/realign.py#) code.
+  * (R) UID: unique ID based on sequence like MINTplates has for tRNA: prefix-22-BZBZOS4Y1 (https://github.com/TJU-CMC-Org/MINTmap/tree/master/MINTplates). It is a good way to use it as cross-mapper ID between different naming or future changes. Currently supported by [mirtop](https://github.com/miRTop/mirtop/blob/dev/mirtop/mirna/realign.py#) code.
   * (O) Read: read sequence
   * (R) Name: mature name
   * (R) Parent: hairpin precursor name
@@ -45,15 +45,15 @@ Please add description for each columns/attribute (R:required, O:optional)
     * `iso_5p:+/-N`. `+` indicates extra nucleotides not in the reference miRNA. `-` indicates removed nucleotides not in the sequence. `N` the number of nucleotides of difference. For instance, if the sequence starts 2 nts after the reference miRNA, the label will be: `iso_5p:-2`, but if it starts before, the label will be `iso_5p:+2`.
     * `iso_3p:+/-N`. Same explanation applied.
     * `iso_add:+N`. Same explanation applied.
-    * `iso_snp_seed`: when affected nucleotides are between [2-7].
-    * `iso_snp_central_offset`: when affected nucleotides is at position [8].
-    * `iso_snp_central`: when affected nucleotides are betweem [9-12].
-    * `iso_snp_central_supp`: when affected nucleotides are betweem [13-17].
-    * `iso_snp`: anything else.
+    * `iso_snv_seed`: when affected nucleotides are between [2-7].
+    * `iso_snv_central_offset`: when affected nucleotides is at position [8].
+    * `iso_snv_central`: when affected nucleotides are between [9-12].
+    * `iso_snv_central_supp`: when affected nucleotides are between [13-17].
+    * `iso_snv`: anything else.
   * (O) Changes (optional): similar to previous one but indicating the nucleotides being changed.
     * additions are in capital case
     * deletions are in lower case
-    * example: `Changes iso_5p:0,iso_3p:TT,iso_add:GTC` where `Variant iso_add:+3,iso_3p:-2`.
+    * example: `Changes iso_5p:0,iso_3p:TT,iso_add:GTC` where `Variant iso_add:+3,iso_3p:+2`.
   * (R) Cigar: CIGAR string as indicated [here](https://samtools.github.io/hts-specs/SAMv1.pdf). It is the standard CIGAR for aligners. With the restriction that `M` means exact match always. That's a difference with some aligners where `M` includes mismatches. In this case, if there is a mismatch, then it should be output like: `11MA7M` to indicates there is a mismatch at position 12, where `A` is the reference nucleotide.
   * (R) Hits: number of hits in the database.
   * (O) Alias (Optional): get names from miRBase/miRgeneDB or other database separated by `,`
