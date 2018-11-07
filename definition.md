@@ -54,7 +54,7 @@ Please add description for each columns/attribute (R:required, O:optional)
   * (O) Changes (optional): similar to previous one but indicating the nucleotides being changed.
     * additions are in capital case
     * deletions are in lower case
-    * example: `Changes iso_5p:0,iso_3p:TT,iso_add:GTC` where `Variant iso_add:+3,iso_3p:+2`.
+    * example: `Changes iso_5p:0,iso_3p:TT,iso_add3p:GTC` where `Variant iso_add3p:3,iso_3p:+2`.
   * (R) Cigar: CIGAR string as indicated [here](https://samtools.github.io/hts-specs/SAMv1.pdf). It is the standard CIGAR for aligners. With the restriction that `M` means exact match always. That's a difference with some aligners where `M` includes mismatches. In this case, if there is a mismatch, then it should be output like: `11MA7M` to indicates there is a mismatch at position 12, where `A` is the reference nucleotide.
   * (R) Hits: number of hits in the database.
   * (O) Alias (Optional): get names from miRBase/miRgeneDB or other database separated by `,`
