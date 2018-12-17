@@ -42,7 +42,7 @@ Please add description for each columns/attribute (R:required, O:optional)
   * (R) Name: mature name
   * (R) Parent: hairpin precursor name
   * (R) Variant: (categorical types - adapted from isomiR-SEA)
-    * `iso_5p:+/-N`. `+` indicates extra nucleotides not in the reference miRNA. `-` indicates removed nucleotides not in the sequence. `N` the number of nucleotides of difference. For instance, if the sequence starts 2 nts after the reference miRNA, the label will be: `iso_5p:-2`, but if it starts before, the label will be `iso_5p:+2`.
+    * `iso_5p:+/-N`. `+` indicates the start is shifted to the right. `-` indicates the start is shifted to the left. `N` the number of nucleotides of difference. For instance, if the sequence starts 2 nts after the reference miRNA, the label will be: `iso_5p:+2`, but if it starts before, the label will be `iso_5p:-2`.
     * `iso_3p:+/-N`. Same explanation applied.
     * `iso_add3p:N`. Number of non-template nucleotides added at 3p.
     * `iso_add5p:N`. Number of non-template nucleotides added at 5p.
