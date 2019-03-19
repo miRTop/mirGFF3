@@ -22,9 +22,11 @@ Please add description for each columns/attribute (R:required, O:optional)
   * (R) database: `##source-ontology` using FAIRSharing.org:
     * miRBase: (FAIRsharing) doi:10.25504/fairsharing.hmgte8
     * mirGeneDB: http://mirgenedb.org
+    * mirCarta: https://mircarta.cs.uni-saarland.de/
+    * Custom database: please, provide a link to an archive release if this is the case
   * (O) commands used to generate the file. At least information about adapter removal, filtering, aligner, mirna tool. All of them starting like: `## CMD: `. Can be multiple lines starting with this tag.
   *  (O) genome/database version used (maybe try to get from BAM file if GFF3 generated from it): `## REFERENCE:`
-  * (R) sample names used in attribute:Expression: `## COLDATA:` separated by spaces
+  * (R) sample names used in attribute:Expression: `## COLDATA:` separated by comma: `,`.
   * (O) Filter tags meaning: See Filter attribute below. Different filter tags should be separated by `,` character. Example: `## FILTER: ` and example would be `## FILTER: PASS(is ok), REJECT(false positive), REJECT lowcount(rejected due to low count in data)`.
 
 ## Columns
