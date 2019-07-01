@@ -1,6 +1,6 @@
 **Version**
 
-VERSION: 1.1
+VERSION: 1.2
 
 **Description**
 
@@ -17,15 +17,17 @@ In addition, the following characters have reserved meanings in column 9 and mus
 Please add description for each columns/attribute (R:required, O:optional)
 
 ## Header
+
 * header:
-  * (R) small RNA GFF version `## VERSION: 1.0`
+  * (R) small RNA GFF version `## VERSION: 1.2`
   * (R) database: `##source-ontology` using FAIRSharing.org:
     * miRBase: (FAIRsharing) doi:10.25504/fairsharing.hmgte8
     * mirGeneDB: http://mirgenedb.org
-  * (O) commands used to generate the file. At least information about adapter removal, filtering, aligner, mirna tool. All of them starting like: `## CMD: `. Can be multiple lines starting with this tag.
+  * (R) tools used starting with the label `## TOOLS:` and followed by tools used to call isomiRs separated by comma (`,`).
+  * (O) commands used to generate the file. At least information about adapter removal, filtering, aligner, mirna tool. All of them starting like: `## CMD:`. Can be multiple lines starting with this tag.
   *  (O) genome/database version used (maybe try to get from BAM file if GFF3 generated from it): `## REFERENCE:`
   * (R) sample names used in attribute:Expression: `## COLDATA:` separated by spaces
-  * (O) Filter tags meaning: See Filter attribute below. Different filter tags should be separated by `,` character. Example: `## FILTER: ` and example would be `## FILTER: PASS(is ok), REJECT(false positive), REJECT lowcount(rejected due to low count in data)`.
+  * (O) Filter tags meaning: See Filter attribute below. Different filter tags should be separated by `,` character. Example: `## FILTER:` and example would be `## FILTER: PASS(is ok), REJECT(false positive), REJECT lowcount(rejected due to low count in data)`.
 
 ## Columns
 
