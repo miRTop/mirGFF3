@@ -33,10 +33,10 @@ Please add description for each columns/attribute (R:required, O:optional)
 
 ## Columns
 
-* (R) column1: seqID: precursor name
+* (R) column1: seqID: precursor name or chromosome name
 * (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, miRCarta, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
 * (R) column3: type: `ref_miRNA, isomiR, pre_miRNA`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA or SO:0002167 isomiR or SO:0001244 pre_miRNA)
-* (R) column4/5: start/end: precursor start/end as indicated by alignment tool
+* (R) column4/5: start/end: precursor/chromosome start/end as indicated by alignment tool
 * (O) column6: score (Optional): It can be the mapping score or any other score the tool wants to assign to the sequence.
 * (R) column7: strand. In the case of mapping against precursor should be always `+`. It should accept mapping against the genome: `+/-` allowed.
 * (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant right now. This can be: `.`

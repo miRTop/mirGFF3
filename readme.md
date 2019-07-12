@@ -50,13 +50,15 @@ Share any [questions and/or suggestions](https://github.com/miRTop/mirGFF3/issue
 
 Make your tool [compatible](https://github.com/miRTop/mirtop/issues/new), open an issue today!
 
-**API**
+**TOOL**
+
+We have created `mirtop` to help with the format:
 
 * Convert to GFF
 * Convert from GFF
 * Validator
 
-Link to the API: https://mirtop.readthedocs.io/en/latest/
+Link to the tool: https://mirtop.readthedocs.io/en/latest/
 
 **Implementation**
 
