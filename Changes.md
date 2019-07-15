@@ -1,3 +1,7 @@
+# 1.2 July, 1th, 2019
+
+* `## TOOLS:` is added as required in the header of the file.
+
 # 1.1 October, 24th, 2018
 
 * UID is following exactly MINTplates licenses since this commit: 7f7717d5f23ea638f1a14fccc6386e1dbb8a7e1a in mirtop applied

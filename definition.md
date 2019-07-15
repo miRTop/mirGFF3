@@ -1,6 +1,6 @@
 **Version**
 
-VERSION: 1.1
+VERSION: 1.2
 
 **Description**
 
@@ -17,13 +17,15 @@ In addition, the following characters have reserved meanings in column 9 and mus
 Please add description for each columns/attribute (R:required, O:optional)
 
 ## Header
+
 * header:
-  * (R) small RNA GFF version `## VERSION: 1.0`
+  * (R) small RNA GFF version `## VERSION: 1.2`
   * (R) database: `##source-ontology` using FAIRSharing.org:
     * miRBase: (FAIRsharing) doi:10.25504/fairsharing.hmgte8
     * mirGeneDB: http://mirgenedb.org
     * mirCarta: https://mircarta.cs.uni-saarland.de/
     * Custom database: please, provide a link to an archive release if this is the case
+  * (R) tools used starting with the label `## TOOLS:` and followed by tools used to call isomiRs separated by comma (`,`).
   * (O) commands used to generate the file. At least information about adapter removal, filtering, aligner, mirna tool. All of them starting like: `## CMD: `. Can be multiple lines starting with this tag.
   *  (O) genome/database version used (maybe try to get from BAM file if GFF3 generated from it): `## REFERENCE:`
   * (R) sample names used in attribute:Expression: `## COLDATA:` separated by comma: `,`.
@@ -31,10 +33,10 @@ Please add description for each columns/attribute (R:required, O:optional)
 
 ## Columns
 
-* (R) column1: seqID: precursor name
+* (R) column1: seqID: precursor name or chromosome name
 * (R) column2: source: databases used for the annotation with version (miRBase21, mirGeneDB2.0, miRCarta, ...etc): https://github.com/miRTop/incubator/issues/13. With the version: `mirbase21`
 * (R) column3: type: `ref_miRNA, isomiR, pre_miRNA`: https://github.com/miRTop/incubator/issues/13  (SO:0002166 ref_miRNA or SO:0002167 isomiR or SO:0001244 pre_miRNA)
-* (R) column4/5: start/end: precursor start/end as indicated by alignment tool
+* (R) column4/5: start/end: precursor/chromosome start/end as indicated by alignment tool
 * (O) column6: score (Optional): It can be the mapping score or any other score the tool wants to assign to the sequence.
 * (R) column7: strand. In the case of mapping against precursor should be always `+`. It should accept mapping against the genome: `+/-` allowed.
 * (O) column8: phase: (For features of type "CDS", the phase indicates where the feature begins with reference to the reading frame): Not relevant right now. This can be: `.`
