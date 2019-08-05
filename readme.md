@@ -5,6 +5,7 @@ A proxy for [miRNA](https://en.wikipedia.org/wiki/MicroRNA)/[isomiR](https://en.
 [![example](https://img.shields.io/badge/gff3-example-green.svg)](https://github.com/miRTop/mirGFF3/blob/master/example.gff)
 [![FAIR](https://img.shields.io/badge/FAIRsharing-accepted-blue.svg)](https://fairsharing.org/bsg-s001218)
 [![EDAM](https://img.shields.io/badge/EDAM-accepted-blue.svg)](http://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=format_3864)
+[![biorxiv](https://img.shields.io/badge/biorxiv-accepted-red.svg)](https://www.biorxiv.org/content/10.1101/505222v1)
 
 
 
@@ -29,7 +30,7 @@ Note: Keep in mind this is for the output of a pipeline, so we know there will b
 
 **Version**
 
-VERSION: 0.9
+VERSION: 1.2
 
 **Contact**
 
